@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #ffffff;
+    color: #555;
+    font-family: sans-serif;
+    -webkit-font-family: sans-serif;
+    -osx-font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+section {
+    width: 1200px;
+    height: 10vh;
+}
+
+.question-portal {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-overlay {
+    background-color: black !important;
+    z-index: 0;
+}
+
+.input {
+
+    display: flex;
+    align-content: center;
+    text-align: center;
+    height: 10vh !important;
+}
