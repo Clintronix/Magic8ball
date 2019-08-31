@@ -1,5 +1,3 @@
-
-
 ////UI display ----------------------------
 var UIdisplay = (function () {
     var answers, n, classBody, fortune;
