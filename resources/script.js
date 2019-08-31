@@ -1,3 +1,5 @@
+
+
 ////UI display ----------------------------
 var UIdisplay = (function () {
     var answers, n, classBody, fortune;
@@ -5,10 +7,12 @@ var UIdisplay = (function () {
     
     return {
         deleteInput: function() {
-            var inputAns = document.getElementById("inputAns");
-            inputAns.removeChild(inputAns.childNodes[0]);
             var inputQues = document.getElementById("inputQues");
+            var inputAns = document.getElementById("inputAns");   
             inputQues.removeChild(inputQues.childNodes[0]);
+            inputAns.removeChild(inputAns.childNodes[0]);
+            
+            
             
         },
         display8Ball: function () {
@@ -54,10 +58,13 @@ var configure = (function () {
 ////controller ------------------------------
 var controller = (function (UIdisplay, configure) {
     var Displays = function () {
-        sendInput();
+        if (document.querySelector('.questionInput').value) {
+            sendInput();
             UIdisplay.display8Ball();
             configure.pickFortune();
             UIdisplay.deleteInput();
+        }
+            
     };
             
     
