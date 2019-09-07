@@ -1,5 +1,3 @@
-
-
 ////UI display ----------------------------
 var UIdisplay = (function () {
     var answers, classBody, n, fortune;
@@ -125,7 +123,3 @@ var controller = (function (UIdisplay, configure) {
 })(UIdisplay, configure);
 
 controller.init();
-
-
-
-
